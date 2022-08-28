@@ -1,7 +1,6 @@
 {
   "name": "find-hidden-number",
   "private": true,
-  "homepage": "https://skorotkiewicz.github.io/find-hidden-number/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
