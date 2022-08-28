@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/find-hidden-number/sw.js', { scope: '/find-hidden-number/' })})}
