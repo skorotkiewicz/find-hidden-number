@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e1d1bc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 389px) {
+  .box {
+    width: 35px !important;
+    height: 35px !important;
+    padding: 3px !important;
+    margin: 3px !important;
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .boxes {
+    display: flex;
+    max-height: 500px;
+    max-width: 600px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    cursor: pointer;
+  }
+
+  button {
+    border-radius: 1rem;
+    padding: 3px;
+    margin: 5px;
+  }
+
+  .search {
+    // color: #f89f50;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+    border: 1px solid #9a7d5e;
+    padding: 5px;
+    margin: 5px;
+    background-color: #c39e73;
+    color: #634e3a;
+
+    .int {
+      background-color: transparent;
+      font-size: 26px;
+    }
+
+    .num {
+      background-color: #ccc;
+      width: 100%;
+      text-align: center;
+      padding: 1px;
+      border-radius: 1rem;
+    }
+  }
+
+  .open {
+    opacity: 0.8;
+    .int {
+      font-size: 16px;
+    }
+  }
+
+  .free {
+    color: green;
+    text-decoration: underline;
+  }
+  .lost {
+    color: red;
+    text-decoration: underline;
+  }
+
+  .pnum {
+    border: 5px dotted green;
+
+    animation: zoom-in-zoom-out 2s ease-out;
+  }
+}
+
+.boxes {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
